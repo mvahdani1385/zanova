@@ -27,7 +27,7 @@ export default function ManageCodesPage() {
     const [currentPage, setCurrentPage] = useState(1)
     const [totalPages, setTotalPages] = useState(1)
     const [stats, setStats] = useState({ total: 0, used: 0, unused: 0 })
-    const [batches, setBatches] = useState<string[]>([])
+    const [batches, setBatches] = useState<any []>([])
     const [message, setMessage] = useState("")
     const [showQRCode, setShowQRCode] = useState<number | null>(null)
     const [selectedCodes, setSelectedCodes] = useState<number[]>([])
@@ -414,7 +414,7 @@ export default function ManageCodesPage() {
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-gray-200">
-                                        {codes.map((code) => (
+                                        {codes.map((code: any) => (
                                             <tr key={code.id} className="hover:bg-gray-50">
                                                 <td className="px-3 py-4">
                                                     <input
