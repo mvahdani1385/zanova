@@ -9,7 +9,7 @@ const JWT_SECRET = new TextEncoder().encode(
 // مسیرهایی که نیاز به لاگین ندارند
 const publicPaths = ['/login', '/api/login', '/api/setup-owner', '/_next', '/favicon.ico']
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   // مسیرهای عمومی - اجازه بده بدون لاگین
