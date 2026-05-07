@@ -1,5 +1,77 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Modam';
+  src: url('./css/fonts/Modam-ExtraLight.ttf') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('./css/fonts/Modam-ExtraLight.ttf') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('./css/fonts/Modam-Light.ttf') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('./css/fonts/Modam-Regular.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('./css/fonts/Modam-Medium.ttf') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('./css/fonts/Modam-SemiBold.ttf') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('./css/fonts/Modam-Bold.ttf') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('./css/fonts/Modam-ExtraBold.ttf') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "remixicon";
+  src: url("./css/icon/remixicon.eot");
+  src: url("./css/icon/remixicon.eot?#iefix") format("embedded-opentype"),
+    url("./css/icon/remixicon.woff2") format("woff2"),
+    url("./css/icon/remixicon.woff") format("woff"),
+    url("./css/icon/remixicon.ttf") format("truetype"),
+    url("./css/icon/remixicon.svg#remixicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: modam;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,8 +86,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a;
   }
 }
 
@@ -23,4 +95,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  direction: rtl;
 }
