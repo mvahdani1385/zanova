@@ -12,7 +12,7 @@ let currentDomain = "http://localhost:3000"
 async function getCurrentDomain() {
     // می‌تونی از یک فایل یا دیتابیس بخونی
     // فعلاً از متغیر محیطی یا فایل settings استفاده می‌کنیم
-    return process.env.BASE_URL || "http://192.168.230.13:3000"
+    return process.env.BASE_URL
 }
 
 // تابع تولید QR Code

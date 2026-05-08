@@ -78,13 +78,6 @@ export async function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    /*
-     * مسیرهای زیر نیاز به لاگین دارند:
-     * - همه صفحات (/) -> page.tsx
-     * - مسیرهای admin
-     * - مسیرهای dashboard
-     * - API ها
-     */
     '/',
     '/admin/:path*',
     '/dashboard/:path*',
